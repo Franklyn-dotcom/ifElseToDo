@@ -1,7 +1,7 @@
 //the commentBtn and the info
 let notify = document.getElementById('notify');
 let overflow_bc = document.querySelector('.overflow-bc');
-let closeNet = document.getElementById('close');
+let closeNet = document.querySelector('.close');
 let hideh2 = document.querySelector('.hide-h2');
 let hideLi = document.querySelector('.hide-Li');
 

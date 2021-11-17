@@ -173,7 +173,7 @@ h3 {
   color: rgb(255, 255, 255);
   font-size: 2rem;
   cursor: pointer;
-
+ 
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
   /* animation-duration: 2s; */
@@ -181,7 +181,12 @@ h3 {
   animation-direction: alternate-reverse;
   animation-play-state: running;
   overflow: hidden;
+  z-index: 1;
   margin-right: 25px;
+}
+.hide{
+  opacity: 0;
+  transition: opacity .1s ease;
 }
 #notify::before {
   content: "1";
@@ -194,6 +199,7 @@ h3 {
   right: 30px;
   font-size: 16px;
   font-family: "Times New Roman", Times, serif;
+  z-index: 1;
   border-radius: 50px;
 }
 .fa-comment-alt {
@@ -327,7 +333,7 @@ header{
   font-size: 1.2rem;
  
 }
-.whiteBc #close{
+.whiteBc .close{
   font-size: 1.3rem;
   background-color: rgb(14, 13, 13);
   position: absolute;
